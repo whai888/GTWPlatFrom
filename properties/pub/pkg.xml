@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<list>
+  <package>
+    <chName>212</chName>
+    <name>123123</name>
+    <packageType>字符串报文</packageType>
+    <desc>31</desc>
+    <dictList>
+      <dict>
+        <code>3123123123123</code>
+        <name>312321</name>
+        <type>BasicType</type>
+        <codeType>String</codeType>
+        <descrip></descrip>
+        <value>123</value>
+        <lists/>
+      </dict>
+      <dict>
+        <code>trans_code</code>
+        <name>交易名称</name>
+        <type>BasicType</type>
+        <codeType>Integer</codeType>
+        <descrip>1312312322222</descrip>
+        <value>12312</value>
+        <lists/>
+      </dict>
+      <dict>
+        <code>trans_code</code>
+        <name>交易名称</name>
+        <type>BasicType</type>
+        <codeType>Integer</codeType>
+        <descrip>1312312322222</descrip>
+        <value>12312</value>
+        <lists/>
+      </dict>
+    </dictList>
+  </package>
+</list>

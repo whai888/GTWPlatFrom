@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<list>
+  <action>
+    <code>10001</code>
+    <name>客户身份校验</name>
+  </action>
+</list>

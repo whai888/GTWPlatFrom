@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="eausermenumap">
+  <select id="getTableAll" parameterType="map" resultType="hashmap">select * from eausermenumap</select>
+  <select id="getTableAllCount" parameterType="map" resultType="int">select count(*) from eausermenumap</select>
+  <select id="getTableByPk" parameterType="map" resultType="hashmap">select * from eausermenumap where 1=1 and AUTHORIZEID= #{AUTHORIZEID} and AUTHORIZEID= #{AUTHORIZEID} and USERID= #{USERID} and USERID= #{USERID} and MENUID= #{MENUID} and MENUID= #{MENUID} and AUTHORIZELEVEL= #{AUTHORIZELEVEL} and AUTHORIZELEVEL= #{AUTHORIZELEVEL} and AUTHORIZEID= #{AUTHORIZEID} and AUTHORIZEID= #{AUTHORIZEID} and USERID= #{USERID} and USERID= #{USERID} and MENUID= #{MENUID} and MENUID= #{MENUID} and AUTHORIZELEVEL= #{AUTHORIZELEVEL} and AUTHORIZELEVEL= #{AUTHORIZELEVEL} </select>
+  <delete id="deleteTableByPk" parameterType="map">delete eausermenumap where 1=1 and AUTHORIZEID= #{AUTHORIZEID} and AUTHORIZEID= #{AUTHORIZEID} and USERID= #{USERID} and USERID= #{USERID} and MENUID= #{MENUID} and MENUID= #{MENUID} and AUTHORIZELEVEL= #{AUTHORIZELEVEL} and AUTHORIZELEVEL= #{AUTHORIZELEVEL} and AUTHORIZEID= #{AUTHORIZEID} and AUTHORIZEID= #{AUTHORIZEID} and USERID= #{USERID} and USERID= #{USERID} and MENUID= #{MENUID} and MENUID= #{MENUID} and AUTHORIZELEVEL= #{AUTHORIZELEVEL} and AUTHORIZELEVEL= #{AUTHORIZELEVEL} </delete>
+</mapper>

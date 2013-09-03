@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<BizTransInfo>
+  <transInfo>
+    <id>10000002</id>
+    <name>������Ϣ2</name>
+    <desc></desc>
+    <input/>
+    <output/>
+  </transInfo>
+  <bizContentsModel>
+    <listeners serialization="custom">
+      <java.beans.PropertyChangeSupport>
+        <default>
+          <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+          <source class="com.sq.core.gtw.edit.model.impl.BizContentsModel" reference="../../../.."/>
+        </default>
+        <null/>
+      </java.beans.PropertyChangeSupport>
+    </listeners>
+    <id></id>
+    <name></name>
+    <description></description>
+    <lable></lable>
+    <children>
+      <com.sq.core.gtw.edit.model.impl.BizModel>
+        <listeners serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              <source class="com.sq.core.gtw.edit.model.impl.BizModel" reference="../../../.."/>
+            </default>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </listeners>
+        <text>业务组件名称</text>
+        <desc>业务组件提升业务组件提升业务组件提升业务组件提升业务组件提升</desc>
+        <constraint>
+          <x>158</x>
+          <y>197</y>
+          <width>80</width>
+          <height>50</height>
+        </constraint>
+        <iFlowModelProperties class="com.sq.core.gtw.edit.model.impl.BizModelPropertiesSystem">
+          <name>就是这个名词修改看看</name>
+          <type>交易类型修改看看</type>
+        </iFlowModelProperties>
+        <sourceConnection>
+          <com.sq.core.gtw.edit.model.impl.BizConnectionModel>
+            <source reference="../../.."/>
+            <target>
+              <listeners serialization="custom">
+                <java.beans.PropertyChangeSupport>
+                  <default>
+                    <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                    <source class="com.sq.core.gtw.edit.model.impl.BizModel" reference="../../../.."/>
+                  </default>
+                  <null/>
+                </java.beans.PropertyChangeSupport>
+              </listeners>
+              <text>客户身份校验</text>
+              <desc></desc>
+              <constraint>
+                <x>146</x>
+                <y>391</y>
+                <width>80</width>
+                <height>50</height>
+              </constraint>
+              <iFlowModelProperties class="com.sq.core.gtw.edit.model.impl.BizModelPropertiesSystem"/>
+              <sourceConnection/>
+              <targetConnection>
+                <com.sq.core.gtw.edit.model.impl.BizConnectionModel reference="../../.."/>
+              </targetConnection>
+              <bizDefinitionVoList>
+                <com.sq.core.gtw.edit.vo.imp.system.BizDefinitionVo>
+                  <label>账号</label>
+                  <labelLenth>100</labelLenth>
+                  <type>Text</type>
+                  <classField>name</classField>
+                </com.sq.core.gtw.edit.vo.imp.system.BizDefinitionVo>
+              </bizDefinitionVoList>
+            </target>
+          </com.sq.core.gtw.edit.model.impl.BizConnectionModel>
+        </sourceConnection>
+        <targetConnection/>
+        <bizDefinitionVoList>
+          <com.sq.core.gtw.edit.vo.imp.system.BizDefinitionVo>
+            <label>名称</label>
+            <type>Text</type>
+            <classField>name</classField>
+          </com.sq.core.gtw.edit.vo.imp.system.BizDefinitionVo>
+          <com.sq.core.gtw.edit.vo.imp.system.BizDefinitionVo>
+            <label>类型</label>
+            <type>Text</type>
+            <classField>type</classField>
+          </com.sq.core.gtw.edit.vo.imp.system.BizDefinitionVo>
+        </bizDefinitionVoList>
+      </com.sq.core.gtw.edit.model.impl.BizModel>
+      <com.sq.core.gtw.edit.model.impl.BizModel>
+        <listeners serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              <source class="com.sq.core.gtw.edit.model.impl.BizModel" reference="../../../.."/>
+            </default>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </listeners>
+        <text>客户身份校验</text>
+        <desc></desc>
+        <constraint>
+          <x>279</x>
+          <y>403</y>
+          <width>80</width>
+          <height>50</height>
+        </constraint>
+        <iFlowModelProperties class="com.sq.core.gtw.edit.model.impl.BizModelPropertiesSystem" reference="../../com.sq.core.gtw.edit.model.impl.BizModel/sourceConnection/com.sq.core.gtw.edit.model.impl.BizConnectionModel/target/iFlowModelProperties"/>
+        <sourceConnection/>
+        <targetConnection/>
+        <bizDefinitionVoList reference="../../com.sq.core.gtw.edit.model.impl.BizModel/sourceConnection/com.sq.core.gtw.edit.model.impl.BizConnectionModel/target/bizDefinitionVoList"/>
+      </com.sq.core.gtw.edit.model.impl.BizModel>
+      <com.sq.core.gtw.edit.model.impl.BizModel reference="../com.sq.core.gtw.edit.model.impl.BizModel/sourceConnection/com.sq.core.gtw.edit.model.impl.BizConnectionModel/target"/>
+    </children>
+  </bizContentsModel>
+  <services>
+    <service>
+      <name>热311</name>
+      <serviceType>FTPFileService</serviceType>
+      <desc></desc>
+      <subInfo>
+        <service>
+          <name>主机信息</name>
+          <subInfo>
+            <service>
+              <name>主机IP</name>
+              <serviceType> </serviceType>
+              <desc>20.10.10.1</desc>
+              <subInfo/>
+            </service>
+            <service>
+              <name>主机端口</name>
+              <serviceType> </serviceType>
+              <desc>22</desc>
+              <subInfo/>
+            </service>
+            <service>
+              <name>用户名</name>
+              <serviceType> </serviceType>
+              <desc>33</desc>
+              <subInfo/>
+            </service>
+            <service>
+              <name>密码</name>
+              <serviceType> </serviceType>
+              <desc>44</desc>
+              <subInfo/>
+            </service>
+          </subInfo>
+        </service>
+      </subInfo>
+    </service>
+  </services>
+  <packages/>
+  <definitionBiz>
+    <com.sq.core.gtw.edit.vo.FlowBizPaletteInfo>
+      <image></image>
+      <contentName>业务组件名称</contentName>
+      <toolTipTextname>业务组件提升</toolTipTextname>
+      <descript>业务组件提升业务组件提升业务组件提升业务组件提升业务组件提升</descript>
+      <bizDefinitionVoList reference="../../../bizContentsModel/children/com.sq.core.gtw.edit.model.impl.BizModel/bizDefinitionVoList"/>
+      <iFlowModelProperties class="com.sq.core.gtw.edit.model.impl.BizModelPropertiesSystem" reference="../../../bizContentsModel/children/com.sq.core.gtw.edit.model.impl.BizModel/iFlowModelProperties"/>
+    </com.sq.core.gtw.edit.vo.FlowBizPaletteInfo>
+  </definitionBiz>
+</BizTransInfo>

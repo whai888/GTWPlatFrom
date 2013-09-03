@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<BizTransInfo>
+  <transInfo>
+    <id>10000003</id>
+    <name>������Ϣ31111</name>
+    <desc></desc>
+    <input/>
+    <output/>
+  </transInfo>
+  <bizContentsModel>
+    <listeners serialization="custom">
+      <java.beans.PropertyChangeSupport>
+        <default>
+          <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+          <source class="com.sq.core.gtw.edit.model.impl.BizContentsModel" reference="../../../.."/>
+        </default>
+        <null/>
+      </java.beans.PropertyChangeSupport>
+    </listeners>
+    <id></id>
+    <name></name>
+    <description></description>
+    <lable></lable>
+    <children>
+      <com.sq.core.gtw.edit.model.impl.BizModel>
+        <listeners serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              <source class="com.sq.core.gtw.edit.model.impl.BizModel" reference="../../../.."/>
+            </default>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </listeners>
+        <text>SQL操作</text>
+        <desc>SQL操作SQL操作SQL操作</desc>
+        <constraint>
+          <x>178</x>
+          <y>227</y>
+          <width>80</width>
+          <height>50</height>
+        </constraint>
+        <iFlowModelProperties class="com.sq.core.gtw.edit.model.impl.BizModelPropertiesSql">
+          <tableName></tableName>
+          <sql></sql>
+          <sqlService></sqlService>
+          <dataSource></dataSource>
+          <transType></transType>
+        </iFlowModelProperties>
+        <sourceConnection/>
+        <targetConnection/>
+        <bizDefinitionVoList/>
+      </com.sq.core.gtw.edit.model.impl.BizModel>
+    </children>
+  </bizContentsModel>
+  <services/>
+  <packages/>
+  <definitionBiz/>
+</BizTransInfo>

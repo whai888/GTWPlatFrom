@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="eadept">
+  <select id="getTableAll" parameterType="map" resultType="hashmap">select * from eadept</select>
+  <select id="getTableAllCount" parameterType="map" resultType="int">select count(*) from eadept</select>
+  <select id="getTableByPk" parameterType="map" resultType="hashmap">select * from eadept where 1=1 and DEPTID= #{DEPTID} and DEPTID= #{DEPTID} and DEPTID= #{DEPTID} and DEPTID= #{DEPTID} </select>
+  <delete id="deleteTableByPk" parameterType="map">delete eadept where 1=1 and DEPTID= #{DEPTID} and DEPTID= #{DEPTID} and DEPTID= #{DEPTID} and DEPTID= #{DEPTID} </delete>
+</mapper>

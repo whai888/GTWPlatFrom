@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="earole">
+  <select id="getTableAll" parameterType="map" resultType="hashmap">select * from earole</select>
+  <select id="getTableAllCount" parameterType="map" resultType="int">select count(*) from earole</select>
+  <select id="getTableByPk" parameterType="map" resultType="hashmap">select * from earole where 1=1 and ROLEID= #{ROLEID} and ROLEID= #{ROLEID} and ROLEID= #{ROLEID} and ROLEID= #{ROLEID} </select>
+  <delete id="deleteTableByPk" parameterType="map">delete earole where 1=1 and ROLEID= #{ROLEID} and ROLEID= #{ROLEID} and ROLEID= #{ROLEID} and ROLEID= #{ROLEID} </delete>
+</mapper>

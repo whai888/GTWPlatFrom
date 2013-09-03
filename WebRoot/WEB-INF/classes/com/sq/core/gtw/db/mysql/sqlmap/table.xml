@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="table">
+	<!-- 查询所有的表  -->
+	<select id="selectTable" parameterType="string" resultType="string">
+		show tables
+	</select>
+	
+	<!-- 查询表对应的主键  -->
+	<select id="selectTablePK" parameterType="map" resultType="hashmap">
+		SELECT
+		  t.TABLE_NAME,
+		  t.CONSTRAINT_TYPE,
+		  c.COLUMN_NAME,
+		  c.ORDINAL_POSITION
+		FROM
+		  INFORMATION_SCHEMA.TABLE_CONSTRAINTS AS t,
+		  INFORMATION_SCHEMA.KEY_COLUMN_USAGE AS c
+		WHERE
+		  t.TABLE_NAME = c.TABLE_NAME
+			AND t.table_name=#{tableName}
+		  AND t.CONSTRAINT_TYPE = 'PRIMARY KEY'
+	</select>
+	
+	<!-- 查询表对应的所有列  -->
+	<select id="selectTableColumns" statementType="CALLABLE" parameterType="map" resultType="hashmap">
+		show columns from #{tableName}
+	</select>
+</mapper>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ea_demo_sfxm">
+  <select id="getTableAll" parameterType="map" resultType="hashmap">select * from ea_demo_sfxm</select>
+  <select id="getTableAllCount" parameterType="map" resultType="int">select count(*) from ea_demo_sfxm</select>
+  <select id="getTableByPk" parameterType="map" resultType="hashmap">select * from ea_demo_sfxm where 1=1 and XMID= #{XMID} and XMID= #{XMID} and XMID= #{XMID} and XMID= #{XMID} </select>
+  <delete id="deleteTableByPk" parameterType="map">delete ea_demo_sfxm where 1=1 and XMID= #{XMID} and XMID= #{XMID} and XMID= #{XMID} and XMID= #{XMID} </delete>
+</mapper>

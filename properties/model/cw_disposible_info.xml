@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cw_disposible_info">
+  <select id="getTableAll" parameterType="map" resultType="hashmap">select * from cw_disposible_info</select>
+  <select id="getTableAllCount" parameterType="map" resultType="int">select count(*) from cw_disposible_info</select>
+  <select id="getTableByPk" parameterType="map" resultType="hashmap">select * from cw_disposible_info where 1=1 and id= #{id} </select>
+  <select id="11111111122222" parameterType="map" resultType="hashmap"></select>
+  <select id="newSelect_1" parameterType="map" resultType="hashmap"></select>
+  <update id="updateTableByPk" parameterType="map">update cw_disposible_info set id= #{id} ,cust_no= #{cust_no} ,start_date= #{start_date} ,fee_date= #{fee_date} ,end_date= #{end_date} ,fee= #{fee} ,www_mgn_info= #{www_mgn_info} ,remark= #{remark} ,status= #{status} where 1=1 and id= #{id} </update>
+  <update id="newUpdate_1" parameterType="map"/>
+  <delete id="deleteTableByPk" parameterType="map">delete cw_disposible_info where 1=1 and id= #{id} </delete>
+  <insert id="insertTable" parameterType="map">insert into cw_disposible_info( id ,cust_no ,start_date ,fee_date ,end_date ,fee ,www_mgn_info ,remark ,status ) values ( #{id} , #{cust_no} , #{start_date} , #{fee_date} , #{end_date} , #{fee} , #{www_mgn_info} , #{remark} , #{status} )</insert>
+</mapper>

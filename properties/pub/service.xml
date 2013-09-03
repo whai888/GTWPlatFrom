@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<list>
+  <service>
+    <name>12312</name>
+    <serviceType>FTPFileService</serviceType>
+    <desc>1231231</desc>
+    <subInfo>
+      <service>
+        <name>主机信息</name>
+        <subInfo>
+          <service>
+            <name>主机IP</name>
+            <serviceType> </serviceType>
+            <desc></desc>
+            <subInfo/>
+          </service>
+          <service>
+            <name>主机端口</name>
+            <serviceType> </serviceType>
+            <desc></desc>
+            <subInfo/>
+          </service>
+        </subInfo>
+      </service>
+    </subInfo>
+  </service>
+  <service>
+    <name>12312122</name>
+    <serviceType>FTPFileService</serviceType>
+    <desc>1231231</desc>
+    <subInfo>
+      <service>
+        <name>主机信息</name>
+        <subInfo>
+          <service>
+            <name>主机IP</name>
+            <serviceType> </serviceType>
+            <desc>20.10.10.23</desc>
+            <subInfo/>
+          </service>
+          <service>
+            <name>主机端口</name>
+            <serviceType> </serviceType>
+            <desc>9001</desc>
+            <subInfo/>
+          </service>
+        </subInfo>
+      </service>
+    </subInfo>
+  </service>
+</list>

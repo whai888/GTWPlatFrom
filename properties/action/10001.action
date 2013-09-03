@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<com.sq.core.gtw.edit.model.impl.ActionContentsModel>
+  <id></id>
+  <name></name>
+  <description></description>
+  <lable></lable>
+  <children>
+    <com.sq.core.gtw.edit.model.impl.ActionModel>
+      <text>ACTION</text>
+      <desc></desc>
+      <constraint>
+        <x>111</x>
+        <y>120</y>
+        <width>80</width>
+        <height>50</height>
+      </constraint>
+      <iActionModelProperties class="com.sq.core.gtw.edit.model.impl.ActionModelPropertiesAction">
+        <action></action>
+      </iActionModelProperties>
+      <sourceConnection>
+        <com.sq.core.gtw.edit.model.impl.ActionConnectionModel>
+          <source reference="../../.."/>
+          <target>
+            <text>FLOW</text>
+            <desc></desc>
+            <constraint>
+              <x>100</x>
+              <y>240</y>
+              <width>80</width>
+              <height>50</height>
+            </constraint>
+            <iActionModelProperties class="com.sq.core.gtw.edit.model.impl.ActionModelPropertiesFlow">
+              <bizInfo>10000002.biz</bizInfo>
+            </iActionModelProperties>
+            <sourceConnection>
+              <com.sq.core.gtw.edit.model.impl.ActionConnectionModel>
+                <source reference="../../.."/>
+                <target>
+                  <text>VIEW</text>
+                  <desc></desc>
+                  <constraint>
+                    <x>114</x>
+                    <y>344</y>
+                    <width>80</width>
+                    <height>50</height>
+                  </constraint>
+                  <iActionModelProperties class="com.sq.core.gtw.edit.model.impl.ActionModelPropertiesView">
+                    <jsp></jsp>
+                  </iActionModelProperties>
+                  <sourceConnection/>
+                  <targetConnection>
+                    <com.sq.core.gtw.edit.model.impl.ActionConnectionModel reference="../../.."/>
+                  </targetConnection>
+                </target>
+                <condition></condition>
+              </com.sq.core.gtw.edit.model.impl.ActionConnectionModel>
+            </sourceConnection>
+            <targetConnection>
+              <com.sq.core.gtw.edit.model.impl.ActionConnectionModel reference="../../.."/>
+            </targetConnection>
+          </target>
+          <condition></condition>
+        </com.sq.core.gtw.edit.model.impl.ActionConnectionModel>
+      </sourceConnection>
+      <targetConnection/>
+    </com.sq.core.gtw.edit.model.impl.ActionModel>
+    <com.sq.core.gtw.edit.model.impl.ActionModel reference="../com.sq.core.gtw.edit.model.impl.ActionModel/sourceConnection/com.sq.core.gtw.edit.model.impl.ActionConnectionModel/target"/>
+    <com.sq.core.gtw.edit.model.impl.ActionModel reference="../com.sq.core.gtw.edit.model.impl.ActionModel/sourceConnection/com.sq.core.gtw.edit.model.impl.ActionConnectionModel/target/sourceConnection/com.sq.core.gtw.edit.model.impl.ActionConnectionModel/target"/>
+  </children>
+</com.sq.core.gtw.edit.model.impl.ActionContentsModel>
